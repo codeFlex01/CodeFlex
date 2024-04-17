@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: top;
+    font-size: 80px;
+    color: #fff;
+}
+
+p {
+    font-size: 25px;
+    color: #fff;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.namefunction {
+    padding: 50px;
+}
+
+.content p {
+    color: black;
+}
+
+.space {
+    height: 80vh;
+}
+
+.spacefunction {
+    height: 100px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1800px;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-inline: 0px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: opx;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%)
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0)
+}
+
+.timeline {
+    height: 720px;
+    width: 1280px;
+}
+
+.spacetimeline {
+    padding: 10px;
+}
+
+.informações{
+    padding: 200px;
+}
